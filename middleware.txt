@@ -1,0 +1,17 @@
+import React from "react";
+import { NextRequest, NextResponse } from "next/server";
+import { AuthContextType } from "./context/auth";
+import { AuthContext } from "./context/auth-context";
+
+// const { data } = React.useContext(AuthContext) as AuthContextType;
+
+// export const config = {
+//     matcher: '/',
+// }
+
+export function middleware(req: NextRequest){
+    // let path = data?.token ? '/auth' : '/';
+    const res = NextResponse.rewrite(new URL('/', req.url))
+    
+    return res;
+}

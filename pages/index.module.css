@@ -1,0 +1,40 @@
+.form_control label,
+.form_control input,
+.form_control textarea {
+  width: 100%;
+  display: block;
+}
+.form_control label {
+  margin-bottom: 0.5rem;
+}
+.form_control {
+  margin-bottom: 1rem;
+}
+.form_actions button,
+.btn {
+  background-color: var(--button-background-color);
+  font: inherit;
+  border: 1px solid var(--button-background-color);
+  margin-right: 1rem;
+  padding: 0.25rem 1rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.26);
+  color: white;
+  cursor: pointer;
+}
+.form_actions button:hover,
+.form_actions button:active,
+.btn:hover,
+.btn:active {
+  background-color: #0745a4;
+  border: 1px solid #0745a4;
+}
+.input {
+  border: 2px solid var(--button-background-color);
+  border-radius: 5px;
+  padding: 0.25rem;
+}
+.signup {
+  display: flex;
+  justify-content: space-between;
+}

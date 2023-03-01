@@ -1,0 +1,25 @@
+.bookings {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 40rem;
+  max-width: 90%;
+}
+.bookings__item {
+  margin: 0.5rem 0rem;
+  padding: 0.5rem;
+  border: 1px solid var(--button-background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .bookings__item {
+    flex-direction: column;
+    padding: .5rem 0rem;
+}
+  .bookings__itemData{
+    margin: .5rem 0rem;
+  }
+}
